@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x11PhoneNumber.proto\"7\n\x0bPhoneNumber\x12\x0e\n\x06number\x18\x01 \x01(\t\x12\x18\n\x04type\x18\x02 \x01(\x0e\x32\n.PhoneType*+\n\tPhoneType\x12\n\n\x06MOBILE\x10\x00\x12\x08\n\x04HOME\x10\x01\x12\x08\n\x04WORK\x10\x02\x62\x06proto3'
+  serialized_pb=b'\n\x11PhoneNumber.proto\"7\n\x0bPhoneNumber\x12\x0e\n\x06number\x18\x01 \x01(\t\x12\x18\n\x04type\x18\x02 \x01(\x0e\x32\n.PhoneType*8\n\tPhoneType\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10\x00\x12\n\n\x06MOBILE\x10\x01\x12\x08\n\x04HOME\x10\x02\x12\x08\n\x04WORK\x10\x03\x62\x06proto3'
 )
 
 _PHONETYPE = _descriptor.EnumDescriptor(
@@ -31,17 +31,22 @@ _PHONETYPE = _descriptor.EnumDescriptor(
   create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='MOBILE', index=0, number=0,
+      name='DEFAULT', index=0, number=0,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='HOME', index=1, number=1,
+      name='MOBILE', index=1, number=1,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='WORK', index=2, number=2,
+      name='HOME', index=2, number=2,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='WORK', index=3, number=3,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
@@ -49,14 +54,15 @@ _PHONETYPE = _descriptor.EnumDescriptor(
   containing_type=None,
   serialized_options=None,
   serialized_start=78,
-  serialized_end=121,
+  serialized_end=134,
 )
 _sym_db.RegisterEnumDescriptor(_PHONETYPE)
 
 PhoneType = enum_type_wrapper.EnumTypeWrapper(_PHONETYPE)
-MOBILE = 0
-HOME = 1
-WORK = 2
+DEFAULT = 0
+MOBILE = 1
+HOME = 2
+WORK = 3
 
 
 

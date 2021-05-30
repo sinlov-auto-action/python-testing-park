@@ -20,8 +20,8 @@ class UserProtoPyTest(unittest.TestCase):
         user_pb.name = fake_name
         user_pb.email = fake_email
         user_pb.age = 16
-        user_pb.number.number = fake_phone_number
-        user_pb.number.type = PhoneNumber.MOBILE
+        user_pb.phoneNumber.number = fake_phone_number
+        user_pb.phoneNumber.type = PhoneNumber.MOBILE
         print('user_pb %s' % user_pb)
         print('user_pb to json\n%s' % json_format.MessageToJson(user_pb))
 
@@ -30,7 +30,9 @@ class UserProtoPyTest(unittest.TestCase):
         self.assertEqual(json_data['age'], user_pb.age)
         self.assertEqual(json_data['name'], fake_name)
         self.assertEqual(json_data['email'], fake_email)
-        self.assertEqual(json_data['number']['number'], user_pb.number.number)
+        self.assertEqual(json_data['phoneNumber']['number'], fake_phone_number)
+        self.assertNotEqual(json_data['phoneNumber']['type'], PhoneNumber.MOBILE)
+        self.assertEqual(json_data['phoneNumber']['type'], PhoneNumber.PhoneType.Name(PhoneNumber.MOBILE))
 
 
 if __name__ == '__main__':

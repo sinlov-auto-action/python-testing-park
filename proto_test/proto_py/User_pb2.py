@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\nUser.proto\x1a\x11PhoneNumber.proto\"j\n\x04User\x12\x0b\n\x03uid\x18\x01 \x01(\t\x12\r\n\x05\x65mail\x18\x02 \x01(\t\x12\x1c\n\x06number\x18\x03 \x01(\x0b\x32\x0c.PhoneNumber\x12\x0c\n\x04name\x18\x04 \x01(\t\x12\r\n\x05\x61lias\x18\x05 \x01(\t\x12\x0b\n\x03\x61ge\x18\x06 \x01(\x05\x62\x06proto3'
+  serialized_pb=b'\n\nUser.proto\x1a\x11PhoneNumber.proto\"o\n\x04User\x12\x0b\n\x03uid\x18\x01 \x01(\t\x12\r\n\x05\x65mail\x18\x02 \x01(\t\x12!\n\x0bphoneNumber\x18\x03 \x01(\x0b\x32\x0c.PhoneNumber\x12\x0c\n\x04name\x18\x04 \x01(\t\x12\r\n\x05\x61lias\x18\x05 \x01(\t\x12\x0b\n\x03\x61ge\x18\x06 \x01(\x05\x62\x06proto3'
   ,
   dependencies=[PhoneNumber__pb2.DESCRIPTOR,])
 
@@ -50,7 +50,7 @@ _USER = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='number', full_name='User.number', index=2,
+      name='phoneNumber', full_name='User.phoneNumber', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -90,10 +90,10 @@ _USER = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=33,
-  serialized_end=139,
+  serialized_end=144,
 )
 
-_USER.fields_by_name['number'].message_type = PhoneNumber__pb2._PHONENUMBER
+_USER.fields_by_name['phoneNumber'].message_type = PhoneNumber__pb2._PHONENUMBER
 DESCRIPTOR.message_types_by_name['User'] = _USER
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 

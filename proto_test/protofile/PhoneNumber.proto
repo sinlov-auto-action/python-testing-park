@@ -6,7 +6,8 @@ message PhoneNumber {
 }
 
 enum PhoneType {
-  MOBILE = 0;
-  HOME = 1;
-  WORK = 2;
+  DEFAULT = 0;
+  MOBILE = 1;
+  HOME = 2;
+  WORK = 3;
 }
