@@ -11,9 +11,11 @@ test_main = "python -m unittest discover"
 requests = "*"
 urllib3 = ">=1.26.4"
 Pygments = ">=2.7.4"
+protobuf = ">=3.17"
 
 [dev-packages]
 httpie = "*"
+faker = ">=8"
 
 [requires]
 python_version = "3.9"

@@ -1,0 +1,18 @@
+{
+  "name": "python-testing-park",
+  "version": "1.0.0",
+  "displayName": "python3 test park",
+  "description": "python3 test case",
+  "python": "3.9",
+  "dependencies": {},
+  "keywords": [
+    "python3",
+    "pipenv",
+    "test park"
+  ],
+  "author": {
+    "name": "sinlov",
+    "email": "sinlovgmppt@gmail.com",
+    "url": "https://github.com/sinlov-auto-action/python-testing-park"
+  }
+}

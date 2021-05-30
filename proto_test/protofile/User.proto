@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "PhoneNumber.proto";
+
+message User {
+  string uid = 1;
+  string email = 2;
+  PhoneNumber number = 3;
+  string name = 4;
+  string alias = 5;
+  int32 age = 6;
+}
+

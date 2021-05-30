@@ -15,11 +15,15 @@ env:
 init:
 	pipenv install --three
 
+install:
+	pipenv sync --dev
+	pipenv sync
+
 graph:
 	pipenv graph
 
 dependencies:
-	pipenv check
+	-pipenv check
 	-pipenv update
 	-pipenv lock
 
