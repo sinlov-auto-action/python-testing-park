@@ -1,6 +1,6 @@
 [![python-pipenv](https://github.com/sinlov-auto-action/python-testing-park/workflows/python-pipenv/badge.svg?branch=main)](https://github.com/sinlov-auto-action/python-testing-park/actions/workflows/python-pipenv.yml)
 
-# this is python3 playground
+# this is python test code park
 
 - repo: [https://github.com/sinlov-auto-action/python-testing-park](https://github.com/sinlov-auto-action/python-testing-park)
 
