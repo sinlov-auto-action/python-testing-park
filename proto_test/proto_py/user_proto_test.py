@@ -48,11 +48,11 @@ class UserProtoPyTest(unittest.TestCase):
         user_pb.phoneNumber.number = fake_phone_number
         user_pb.phoneNumber.type = PhoneNumber.HOME
 
-        pb_serialize_to_string = user_pb.SerializeToString()
-        print('user_pb.SerializeToString:\n{0}'.format(pb_serialize_to_string))
+        pb_serialize_user = user_pb.SerializeToString()
+        print('user_pb.SerializeToString:\n{0}'.format(pb_serialize_user))
 
         user_ds = User.User()
-        user_ds.ParseFromString(pb_serialize_to_string)
+        user_ds.ParseFromString(pb_serialize_user)
         self.assertEqual(user_ds.name, fake_name)
         self.assertEqual(user_ds.email, fake_email)
         self.assertEqual(user_ds.phoneNumber.number, fake_phone_number)
