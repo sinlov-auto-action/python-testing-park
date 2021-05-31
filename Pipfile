@@ -9,9 +9,10 @@ test_main = "python -m unittest discover"
 
 [packages]
 requests = "*"
-urllib3 = ">=1.26.4"
-Pygments = ">=2.7.4"
-protobuf = ">=3.17"
+urllib3 = ">=1.26.4" # https://pypi.org/project/urllib3/
+Pygments = ">=2.7.4" # https://pypi.org/project/Pygments/
+protobuf = ">=3.17" # https://pypi.org/project/protobuf/
+websocket-client = ">=1.0.1" # https://pypi.org/project/websocket-client/
 
 [dev-packages]
 httpie = "*"
