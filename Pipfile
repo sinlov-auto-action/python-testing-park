@@ -6,6 +6,9 @@ name = "pypi"
 [scripts]
 main = "python main.py"
 test_main = "python -m unittest discover"
+setup_install = "python setup.py install"
+setup_build = "python setup.py build"
+setup_sdist = "python setup.py sdist"
 
 [packages]
 requests = "*"
@@ -15,8 +18,8 @@ protobuf = ">=3.17" # https://pypi.org/project/protobuf/
 websocket-client = ">=1.0.1" # https://pypi.org/project/websocket-client/
 
 [dev-packages]
-httpie = "*"
 faker = ">=8"
+httpie = "*"
 
 [requires]
 python_version = "3.9"
